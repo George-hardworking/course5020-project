@@ -1,0 +1,59 @@
+total rows in combined file: 289555
+wind_meteo_t2m: non-null = 107 (0.037%)
+temperature_850hpa: non-null = 289555 (100.000%)
+wind_meteo_wind_speed: non-null = 107 (0.037%)
+wind_meteo_u10: non-null = 107 (0.037%)
+wind_meteo_v10: non-null = 107 (0.037%)
+wind_spatial_distance: non-null = 107 (0.037%)
+wind_temporal_distance: non-null = 107 (0.037%)
+both wind_meteo_t2m & temperature_850hpa: 107 (0.036953% )
+
+--- both count=107 ---
+       wind_spatial_distance  wind_temporal_distance
+count           1.070000e+02                   107.0
+mean            2.710415e+07                     0.0
+std             1.453349e+07                     0.0
+min             1.609896e+06                     0.0
+25%             1.176544e+07                     0.0
+50%             3.000817e+07                     0.0
+75%             3.800818e+07                     0.0
+max             4.782215e+07                     0.0
+
+--- only_t2 count=0 ---
+no rows
+
+--- only_t850 count=289448 ---
+       wind_spatial_distance  wind_temporal_distance
+count                    0.0                     0.0
+mean                     NaN                     NaN
+std                      NaN                     NaN
+min                      NaN                     NaN
+25%                      NaN                     NaN
+50%                      NaN                     NaN
+75%                      NaN                     NaN
+max                      NaN                     NaN
+
+--- neither count=0 ---
+no rows
+
+examples (both):
+fire_idx,fire_lat,fire_lon,fire_time,fire_year,fire_month,wind_meteo_t2m,wind_meteo_u10,wind_meteo_v10,wind_meteo_wind_speed,wind_meteo_year,wind_meteo_month,wind_spatial_distance,wind_temporal_distance,relative_humidity,temperature_850hpa
+45984,44.0605,131.1105,2010-04-25,2010,4,281.9441,0.33678436,-0.76180744,0.83293116,2010.0,4.0,1609896.0,0.0,33.414932,275.61133
+48354,47.2605,131.4099,2010-05-04,2010,5,284.48584,3.055912,0.905241,3.187171,2010.0,5.0,1732607.0,0.0,19.8917,277.2605
+64912,51.46,123.2097,2010-07-01,2010,7,293.7522,0.5827179,0.6940994,0.90627486,2010.0,7.0,2560433.0,0.0,66.89574,290.08328
+72260,49.0594,128.011,2010-08-26,2010,8,293.38818,2.0754538,0.8563757,2.245192,2010.0,8.0,3341101.0,0.0,49.796993,288.75024
+76831,45.6607,133.3093,2010-10-02,2010,10,280.12012,-0.29699993,-2.2631645,2.2825694,2010.0,10.0,3868798.0,0.0,44.902782,277.3839
+
+examples (only_t2):
+fire_idx,fire_lat,fire_lon,fire_time,fire_year,fire_month,wind_meteo_t2m,wind_meteo_u10,wind_meteo_v10,wind_meteo_wind_speed,wind_meteo_year,wind_meteo_month,wind_spatial_distance,wind_temporal_distance,relative_humidity,temperature_850hpa
+
+examples (only_t850):
+fire_idx,fire_lat,fire_lon,fire_time,fire_year,fire_month,wind_meteo_t2m,wind_meteo_u10,wind_meteo_v10,wind_meteo_wind_speed,wind_meteo_year,wind_meteo_month,wind_spatial_distance,wind_temporal_distance,relative_humidity,temperature_850hpa
+6667,43.5863,121.2319,2010-02-05,2010,2,,,,,,,,,26.087742,256.69568
+6668,43.5884,121.2446,2010-02-05,2010,2,,,,,,,,,26.087742,256.69568
+15067,43.683,123.3241,2010-02-23,2010,2,,,,,,,,,58.006947,273.30576
+21015,44.9411,121.59,2010-02-28,2010,2,,,,,,,,,24.538054,255.05722
+21537,44.9317,121.5888,2010-02-28,2010,2,,,,,,,,,24.538054,255.05722
+
+unique fire_idx total: 289555
+rows per fire_idx: min=1, max=1, mean=1.000
