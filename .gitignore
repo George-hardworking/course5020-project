@@ -208,3 +208,4 @@ __marimo__/
 .DS_Store
 outputs/china_counties.geojson
 results/task2/ag_burning_classified_points.geojson
+/raw_data/specific_data
