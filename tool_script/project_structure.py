@@ -230,7 +230,7 @@ class ProjectStructureGenerator:
         file_stats = self.get_file_statistics(structure_data)
         print(f"  文件类型分布:")
         for ext, count in sorted(file_stats.items())[:10]:  # 显示前10种类型
-            print(f"    {ext or '无扩展名'}: {count}")
+            print(f"    {ext or '没有扩展名'}: {count}")
 
 def main():
     parser = argparse.ArgumentParser(description='生成项目目录结构报告')
