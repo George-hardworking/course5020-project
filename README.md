@@ -56,6 +56,7 @@ course5020-project
     │   └── task4
     ├── src
     │   ├── challenge1.ipynb
+    │   ├── challenge2.pdf
     │   ├── challenge3.1.ipynb
     │   ├── challenge3.2.ipynb
     │   ├── main.ipynb
