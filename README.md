@@ -54,8 +54,7 @@ course5020-project
     │   ├── challenge1.ipynb
     │   ├── challenge3.1.ipynb
     │   ├── challenge3.2.ipynb
-    │   ├── main_self.ipynb
-    │   └── main_self_eng.ipynb
+    │   ├── main.ipynb
     ├── LICENSE
     ├── README.md
     └── requirements.txt  
@@ -96,40 +95,34 @@ Based on fire data from 2010–2019, we conducted a comprehensive spatiotemporal
 - Finding 4: The spatiotemporal distribution—characterized as "concentrated regions, concentrated seasons"—closely aligns with the local agricultural calendar, where spring and autumn peaks correspond to field-preparation and post-harvest straw disposal, respectively, with minimal fire incidence in non-agricultural areas.
 
 **To explain our findings more clearly, we have generated visual images of all the results as follows:**
-
 <div style="display: flex; align-items: stretch; gap: 0px;">
-  <div style="flex: 1; display: flex; flex-direction: column; gap: 3px;">
-    <img src="image/task1/Annual_Hotspot_Count_Trend.png" style="width: 70%; height: auto; display: block; margin: 0 auto;">
-    <img src="image/task1/Monthly_Fire_Point_Distribution_for_All_Years_Combined.png" style="width: 65%; height: auto; display: block; margin: 0 auto;">
-  </div>
   <div style="flex: 1;">
     <img src="image/task1/Intra-seasonal_Weekly_Sequence.png" style="width: 100%; height: auto; display: block;">
   </div>
 </div>
+
+<table style="border-collapse: collapse; border: none; width: 100%;">
+  <tr>
+    <td style="border: none; text-align: right; padding: 0;">
+      <img src="image/task1/Month_Fire_Point_Heat_Map.png" style="width: 100%; height: auto; max-width: 100%;">
+    </td>
+    <td style="border: none; text-align: left; padding: 0;">
+      <img src="image/task1/Year_x_ISO_Week_Flash_Point_Heat_Map.png" style="width: 100%; height: auto; max-width: 100%;">
+    </td>
+  </tr>
+</table>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="image/task1/Month_Fire_Point_Heat_Map.png" width="48%">
   <img src="image/task1/Year_x_ISO_Week_Flash_Point_Heat_Map.png" width="48%">
 </div>
 
+
 <div style="display: flex; justify-content: space-around; gap: 10px;">
-  <img src="image/task1/Monthly_Sen_Slope_(Interannual_Trend).png" style="width: 48%; height: auto;">
   <img src="image/task1/Seasonal_Summary_of_Fire_Points.png" style="width: 48%; height: auto;">
+  <img src="image/task1/Weekly_Hotspot_Count_Statistics_for_the_New_Year_Period_(Mean_and_Percentile_Range).png" style="width: 48%; height: auto;">
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
-  <img src="image/task1/Spatial_Distribution_of_County-Level_Fire_Points_(Aggregated).png" style="width: 100%; height: auto;">
-  <img src="image/task1/Spatial_Distribution_of_County-Level_Fire_Points_(Week_13_).png" style="width: 100%; height: auto;">
-  <img src="image/task1/Spatial_Distribution_of_County-Level_Fire_Points_(Week_14_).png" style="width: 100%; height: auto;">
-  <img src="image/task1/Spatial_Distribution_of_County-Level_Fire_Points_(Week_43).png" style="width: 100%; height: auto;">
-  
-  <img src="image/task1/Spatial_Distribution_of_Fire_Points_in_County_Areas_(_Spring_).png" style="width: 100%; height: auto;">
-  <img src="image/task1/Spatial_Distribution_of_Fire_Points_in_County_Areas(_Summer).png" style="width: 100%; height: auto;">
-  <img src="image/task1/Spatial_Distribution_of_Fire_Points_in_County_Areas(_Autumn_).png" style="width: 100%; height: auto;">
-  <img src="image/task1/Spatial_Distribution_of_Fire_Points_in_County_Areas(_Winter_).png" style="width: 100%; height: auto;">
-</div>
-
-![新年期间周火点统计（均值与分位数范围）](image/task1/Weekly_Hotspot_Count_Statistics_for_the_New_Year_Period_(Mean_and_Percentile_Range).png)
 
 ### Core Task 2
 >
