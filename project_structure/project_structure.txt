@@ -1,16 +1,20 @@
 ============================================================
 项目目录结构报告
-生成时间: 2025-11-05T05:30:10.796406
+生成时间: 2025-11-05T20:50:21.884835
 项目根目录: .
-总文件数: 137
-总目录数: 16
+总文件数: 145
+总目录数: 17
 ============================================================
 
 
     ├── docs
     │   ├── 5020 mini priject data list.docx (24.1 KB)
+    │   ├── Challenge 2.docx (23.1 KB)
     │   └── Mini Group Project I_CNGF5020.pdf (198.0 KB)
     ├── project_structure
+    │   ├── project_structure.json (51.5 KB)
+    │   ├── project_structure.md (9.4 KB)
+    │   └── project_structure.txt (9.6 KB)
     ├── raw_data
     │   ├── CHN_County
     │   │   ├── CHN_County.cpg (0.0 KB)
@@ -52,31 +56,28 @@
     │   │   ├── modis_2017_china.csv (8658.5 KB)
     │   │   ├── modis_2018_china.csv (6026.5 KB)
     │   │   └── modis_2019_china.csv (6787.1 KB)
-    │   ├── specific_data
-    │   │   ├── 850hpa_temp_2010_2019.csv (325022.3 KB)
-    │   │   ├── HLJ_2010_PM2.5.csv (129391.5 KB)
-    │   │   ├── HLJ_2011_PM2.5.csv (129434.4 KB)
-    │   │   ├── HLJ_2012_PM2.5.csv (129778.7 KB)
-    │   │   ├── HLJ_2013_PM2.5.csv (129436.8 KB)
-    │   │   ├── HLJ_2014_PM2.5.csv (129414.3 KB)
-    │   │   ├── HLJ_2015_PM2.5.csv (129483.0 KB)
-    │   │   ├── HLJ_2016_PM2.5.csv (129859.8 KB)
-    │   │   ├── HLJ_2018_PM2.5.csv (129637.1 KB)
-    │   │   ├── HLJ_2019_PM2.5.csv (129487.7 KB)
-    │   │   ├── humidity_2010_2019.csv (2976829.2 KB)
-    │   │   └── wind_2010_2019.csv (5142979.0 KB)
     │   └── straw_burning_fire_point_monitoring_data.xlsx (112.2 KB)
     ├── results
     │   ├── challenge3
+    │   │   ├── analysis_summary.txt (1.0 KB)
+    │   │   ├── correlation_analysis_3.2.png (742.7 KB)
     │   │   ├── diagnostic_inversion_coverage.txt (3.2 KB)
     │   │   ├── fire_humidity_ultrafast_full.csv (28752.1 KB)
     │   │   ├── fire_meteorology_ultrafast_combined_full.csv (23911.2 KB)
+    │   │   ├── fire_peak_events.csv (30.4 KB)
     │   │   ├── fire_temperature_ultrafast_full.csv (22014.8 KB)
     │   │   ├── fire_wind_matches_full.csv (10.6 KB)
     │   │   ├── inversion_analysis_final_full.csv (22.0 KB)
     │   │   ├── inversion_final_visualization_full.png (424.7 KB)
+    │   │   ├── lag_correlation_analysis.csv (0.4 KB)
     │   │   ├── meteorology_analysis_english.png (421.5 KB)
     │   │   ├── meteorology_analysis_full.png (512.2 KB)
+    │   │   ├── peak_matching_1day_window.csv (19.6 KB)
+    │   │   ├── peak_matching_2day_window.csv (20.1 KB)
+    │   │   ├── peak_matching_3day_window.csv (20.4 KB)
+    │   │   ├── peak_matching_5day_window.csv (20.6 KB)
+    │   │   ├── pm25_fire_daily_data.csv (356.8 KB)
+    │   │   ├── pm25_peak_events.csv (18.5 KB)
     │   │   └── temperature_inversion_analysis_full.csv (22508.2 KB)
     │   ├── task1
     │   │   ├── all_years_monthly_fire_counts.csv (0.1 KB)
@@ -150,33 +151,43 @@
     │       ├── task4_summary_report.txt (0.5 KB)
     │       ├── temporal_distribution_analysis.png (186.8 KB)
     │       └── temporal_distribution_comparison.png (306.8 KB)
-    ├── script
+    ├── scripts
     │   └── project_structure.py (9.5 KB)
     ├── src
-    │   ├── challenge1.ipynb (222.2 KB)
-    │   ├── challenge3.ipynb (458.9 KB)
+    │   ├── challenge1.ipynb (186.0 KB)
+    │   ├── challenge3.1.ipynb (458.9 KB)
+    │   ├── challenge3.2.ipynb (262.4 KB)
     │   ├── main_self.ipynb (3223.4 KB)
     │   └── main_self_eng.ipynb (3111.9 KB)
+    ├── structure
+    │   ├── project_structure.json (51.5 KB)
+    │   ├── project_structure.md (9.4 KB)
+    │   └── project_structure.txt (9.6 KB)
+    ├── tool_script
+    │   └── project_structure.py (9.5 KB)
+    ├── LICENSE (11.1 KB)
     ├── README.md (0.2 KB)
     └── requirements.txt (0.2 KB)
 
 ============================================================
 文件类型统计:
+  无扩展名: 1 个文件
   .cpg: 1 个文件
-  .csv: 67 个文件
+  .csv: 63 个文件
   .dbf: 1 个文件
-  .docx: 1 个文件
+  .docx: 2 个文件
   .geojson: 1 个文件
-  .ipynb: 4 个文件
-  .md: 1 个文件
+  .ipynb: 5 个文件
+  .json: 2 个文件
+  .md: 3 个文件
   .pdf: 1 个文件
-  .png: 28 个文件
+  .png: 29 个文件
   .prj: 1 个文件
-  .py: 1 个文件
+  .py: 2 个文件
   .sbn: 1 个文件
   .sbx: 1 个文件
   .shp: 1 个文件
   .shx: 1 个文件
   .tif: 20 个文件
-  .txt: 5 个文件
+  .txt: 8 个文件
   .xlsx: 1 个文件
