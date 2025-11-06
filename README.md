@@ -4,47 +4,44 @@ This repository was established to complete the course assignment, which is a mi
 The members of our team are as follows:
 `Kaibiao ZHU, Junye ZHONG, Hongyue WU, Yueting ZHANG `
 
+---
+
 ### Setup Environment
 
-Use conda to create a reproducible environment
+Use `conda` to create a reproducible environment:
+
+1. Create environment with a specific python version.
 
 ```bash
-# create environment with a specific python version
 conda create -n course5020 python=3.11 -y
 conda activate course5020
+```
 
-# install pip and project dependencies
+2. Install pip and project dependencies.
+
+```
 conda install pip -y
 pip install --upgrade pip
 pip install -r requirements.txt
+pip install ipykernel
 ```
-
-Optional: register a Jupyter kernel for interactive runs
-
-```bash
-conda install ipykernel -y
-python -m ipykernel install --user --name course5020 --display-name "course5020"
-```
-
-Notes
-- The dataset is moderately large. Ensure you have sufficient memory (8GB+ recommended) when running full-year aggregations
-- For faster conda installs consider using mamba: `conda install mamba -n base -c conda-forge` then `mamba install ...`
+Notes：
+- The dataset is moderately large. When conducting the annual summary operation, please ensure that you have sufficient memory (recommending more than 8GB) and sufficient time - it may take up to two hours.
 
 ### Download Dataset
 
-All raw data used in this project should be placed under the `raw_data` folder. The repository already includes many required files under `raw_data` but if you need to (re)download or update data, follow these guidelines
+All raw data used in this project should be placed under the `raw_data` folder. The details of all the dataset are as follows:
 
-- Satellite fire data (MODIS) : expected filenames like `modis_2010_china.csv` ... `modis_2019_china.csv` and are located in `raw_data/satellite_fire_data/`
-- PM2.5 per station or gridded data : expected filenames like `HLJ_2010_PM2.5.csv` etc and are located in `raw_data/specific_data/`
-- County shapefiles and other auxiliary data : placed in `raw_data/CHN_County/`
+-  For the part of core tasks, the dataset is already presented in the `raw_data` folder.
+-  For the part of challenge, you can get the dataset by sending an email to author.
 
 Notes about missing years
-- The provided PM2.5 dataset has no 2017 file this project handles that gracefully during preprocessing but if you have 2017 data, add it to `raw_data/specific_data/` with the same naming convention (eg HLJ_2017_PM2.5.csv)
+- The provided PM2.5 dataset has no 2017 file this project handles that gracefully during preprocessing but if you have 2017 data, add it to `raw_data/specific_data/` with the same naming convention (eg: HLJ_2017_PM2.5.csv)
 
-If you need to fetch original sources you can obtain MODIS active fire products from NASA FIRMS or your institutional mirror and export them to CSV matching the expected columns used in the notebooks (`latitude longitude brightness acq_date confidence frp ...`)
 
 ### Project Structure
 ```
+course5020-project
     ├── docs
     ├── raw_data
     ├── results
@@ -65,40 +62,33 @@ If you need to fetch original sources you can obtain MODIS active fire products 
 ```
 
 ### Running the project
+You can enter the following code in the terminal to run the main program：
 ```
 cd src
-python main.py                  #core task
+python main.py  
 python challenge1.ipynb
 python challenge3.1.ipynb
 python challenge3.2.ipynb
 ```
 
-Quick tips for running notebooks
+Quick tips for running notebooks：
 
-- Use JupyterLab or Jupyter Notebook to open the .ipynb files and run cells interactively
-- To run a notebook end to end from the command line use nbconvert execute
+- Use JupyterLab or Jupyter Notebook to open the .ipynb files and run cells interactively.
 
-```bash
-jupyter nbconvert --to notebook --execute challenge3.2.ipynb --inplace
+### Contact and citation
+- If you want to contact the auther, please send an email to `kzhu597@connect.hkust-gz.edu.cn`.  
+
+- If you find this project useful, please cite it as follows:
+
 ```
-
-- If you run into memory issues during aggregation, try processing subset years or use Dask (optional dependency listed in requirements)
-
-Outputs
-- Processed daily aggregations and analysis CSVs are saved to `results/challenge3/` when you run the notebooks
-- Figures produced by notebooks appear inline. You may export them manually if needed
-
-Reproducibility
-- After a successful run record exact package versions with
-
-```bash
-pip freeze > requirements-lock.txt
+@misc{zhu2025investigating,
+      title={Investigating Agricultural Burning with Remote Sensing Data}, 
+      author={Kaibiao Zhu and Junye Zhong and Hongyue Wu and Yueting Zhang},
+      year={2025},
+      url={https://github.com/George-hardworking/course5020-project},
+      note={GitHub repository},
+}
 ```
-
-Contact and citation
-- If you use this repository in your work please cite the project and contact the original authors or course instructor as appropriate
-
-
 
 
 
