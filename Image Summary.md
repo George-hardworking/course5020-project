@@ -1,9 +1,9 @@
 # 图片汇总（Image Summary）
 ## Task 1 相关图片
-![年度火点数量趋势](image/task1/Annual_Hotspot_Count_Trend.png)
-![季节内周序列分布](image/task1/Intra-seasonal_Weekly_Sequence.png)
-![月份火点热力图](image/task1/Month_Fire_Point_Heat_Map.png)
-![历年月度火点分布汇总](image/task1/Monthly_Fire_Point_Distribution_for_All_Years_Combined.png)
+
+
+
+
 ![月度Sen斜率（年际趋势）](image/task1/Monthly_Sen_Slope_(Interannual_Trend).png)
 ![火点季节统计汇总](image/task1/Seasonal_Summary_of_Fire_Points.png)
 ![县域火点空间分布（汇总）](image/task1/Spatial_Distribution_of_County-Level_Fire_Points_(Aggregated).png)
@@ -15,7 +15,7 @@
 ![夏季县域火点空间分布](image/task1/Spatial_Distribution_of_Fire_Points_in_County_Areas(_Summer).png)
 ![冬季县域火点空间分布](image/task1/Spatial_Distribution_of_Fire_Points_in_County_Areas(_Winter_).png)
 ![新年期间周火点统计（均值与分位数范围）](image/task1/Weekly_Hotspot_Count_Statistics_for_the_New_Year_Period_(Mean_and_Percentile_Range).png)
-![年×ISO周火点热力图](image/task1/Year_x_ISO_Week_Flash_Point_Heat_Map.png)
+
 
 ## Task 2 相关图片
 ![火点分类（农业焚烧归因）](image/task2/Fire_Point_Classification_(Agricultural_Burning_Attribution).png)
