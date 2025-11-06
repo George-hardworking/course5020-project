@@ -1,6 +1,9 @@
 # 图片汇总（Image Summary）
 
 ## Task 1 相关图片
+## Task 1 相关图片
+![年度火点数量趋势](./images/Task1/Annual%20Hotspot%20Count%20Trend.png)
+![季节内周序列分布](./images/Task1/Intra-seasonal%20Weekly%20Sequence.png)
 ![年度火点数量趋势](image/Task1/Annual Hotspot Count Trend.png)
 ![季节内周序列分布](image/Task1/Intra-seasonal Weekly Sequence.png)
 ![月份火点热力图](image/Task1/Month Fire Point Heat Map.png)
