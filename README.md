@@ -107,14 +107,14 @@ Based on fire data from 2010–2019, we conducted a comprehensive spatiotemporal
       <img src="image/task1/Month_Fire_Point_Heat_Map.png" style="width: 100%; height: auto; max-width: 100%;">
     </td>
     <td style="border: none; text-align: left; padding: 0;">
-      <img src="image/task1/Year_x_ISO_Week_Flash_Point_Heat_Map.png" style="width: 100%; height: auto; max-width: 100%;">
+      <img src="image/task1/Year_*_ISO_Week_Flash_Point_Heat_Map.png" style="width: 100%; height: auto; max-width: 100%;">
     </td>
   </tr>
 </table>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="image/task1/Month_Fire_Point_Heat_Map.png" width="48%">
-  <img src="image/task1/Year_x_ISO_Week_Flash_Point_Heat_Map.png" width="48%">
+  <img src="image/task1/Year_*_ISO_Week_Flash_Point_Heat_Map.png" width="48%">
 </div>
 
 
