@@ -140,8 +140,6 @@ This structured approach ensures a systematic and reproducible methodology for i
 - Finding 6: The overall reduction in agricultural fires, particularly post-2015, aligns temporally with the implementation of straw burning policy interventions, suggesting their potential influence despite the absence of formal statistical significance in trend tests.
 
 **To explain our findings more clearly, we have generated visual images of all the results as follows:**
-![黑龙江省年度农业焚烧排放总量（2010-2019）](image/task3/task3_1.png)
-![黑龙江省年度序列与最优分割点（两段均值）](image/task3/Heilongjiang_Provincial_Annual_Sequence_and_Optimal_Cutoff_Point_(Two-Segment_Mean).png)
 
 ![黑龙江省年度农业焚烧排放总量（2010-2019）+黑龙江省年度序列与最优分割点（两段均值）](image/task3/task3.png)
 
