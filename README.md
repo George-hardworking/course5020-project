@@ -86,7 +86,7 @@ Quick tips for running notebooks：
 >In data preprocessing, we filtered the MODIS fire records to extract those within Heilongjiang Province, unified the coordinate reference system, and created a comprehensive GeoDataFrame containing each fire’s latitude, longitude, timestamp, and county location. For each analysis task, we applied appropriate methods such as time series analysis, spatial hotspot mapping, farmland buffer filtering, and statistical tests, alongside visualizations (time-series plots, heatmaps, 
 spatial distribution maps) to clearly present the results. In the following sections, Tasks 1-4 and Challenge 1–3 are addressed sequentially, with detailed explanations of the research methods, key steps, main findings and interpretations, and corresponding recommendations.
 ### Core Task 1: Spatiotemporal Patterns of Fire Activity
-#### Method
+#### Solution
 Based on fire data from 2010–2019, we conducted a comprehensive spatiotemporal analysis through the following approaches:
 
 - Step1: Temporal aggregation: Analyzed fire data by month, season, and week of year, generating time-series curves and annual-month heatmaps to identify peak fire activity periods.
@@ -108,7 +108,7 @@ Based on fire data from 2010–2019, we conducted a comprehensive spatiotemporal
 ![task1图3](image/task1/last.png)
 
 ### Core Task 2: Identification and Classification of Agricultural Fires
-#### Method
+#### Solution
 
 - Step 1: A dual-criteria approach ("space + time") was established to classify fire points as likely agricultural burning, requiring simultaneous satisfaction of both spatial (on/near cropland) and temporal (within harvest season) conditions.
 - Step 2: Spatial matching was performed using cropland distribution data (1 km raster), identifying fire points located on cropland pixels or within a 500-meter buffer of farmland as farmland-related.
@@ -128,7 +128,7 @@ This structured approach ensures a systematic and reproducible methodology for i
 ![火点分类（农业焚烧归因）+黑龙江农业焚烧火点数量（优化版）](image/task2/task2.png)
 
 ### Core Task 3: Long-Term Trends in Fire Activity, 2010–2019
-#### Method
+#### Solution
 - Step 1: Compiled annual time-series data of "likely agricultural burning" fire counts in Heilongjiang from 2010 to 2019 as the foundation for temporal change analysis.
 - Step 2: Conducted preliminary trend assessment through linear regression slope calculation and visual inspection of annual fire count plots to determine overall trend direction.
 - Step 3: Applied the Mann-Kendall rank test to evaluate the statistical significance of observed trends, testing against the null hypothesis of no monotonic trend.
@@ -149,8 +149,8 @@ This structured approach ensures a systematic and reproducible methodology for i
 ![黑龙江省年度农业焚烧排放总量（2010-2019）+黑龙江省年度序列与最优分割点（两段均值）](image/task3/task3.png)
 
 
-### Core Task 4
-#### Method
+### Core Task 4: Differences Between Agricultural and Other Fires Methodology
+#### Solution
 - Step 1: Integrated satellite-derived Fire Radiative Power (FRP) values from raw MODIS data into the classified fire dataset to enable intensity comparsions between agricultural and non-agricultural fire categories.
 - Step 2: Calculated descriptive statistics (mean, median, and distribution range) of FRP values separately for agricultural fires and non-agricultural fires to characterize their intensity profiles.
 - Step 3: Performed Mann-Whitney U tests to determine whether observed intensity differences between agricultural and non-agricultural fires were statistically significant.
@@ -170,8 +170,8 @@ This structured approach ensures a systematic and reproducible methodology for i
 ![农业与非农业火点月度-季节分布](image/task4/Monthly_Seasonal_Distribution_of_Agricultural_vs_Non-Agricultural_Hotspots.png)
 
 
-### Challenge 1
-#### Method
+### Challenge 1: Intensity and lmpact Analysis
+#### Solution
 - Step 1: Utilized Fire Radiative Power (FRP) data from MODIS fire products to analyze and compare the intensity characteristics of agricultural fires relative to other fire types.
 - Step 2: Adopted the same four fire classification categories established in Task 2: (1) Likely Agricultural Burning, (2) Cropland Fire – Off-season, (3) Non-cropland Fire – In Harvest Season, and (4) Other/Uncertain fires.
 - Step 3: Computed descriptive statistical metrics for each fire category, including fire count, mean FRP, median FRP, standard deviation, and total estimated fire energy (calculated as fire count multiplied by mean FRP).
@@ -189,7 +189,7 @@ This structured approach ensures a systematic and reproducible methodology for i
 ![挑战1](image/challenge_1/challenge1_.png)
 
 
-### Challenge 2
+### Challenge 2: Methodological Limitations and Uncertainty Discussion
 #### Conclusion
 - Conclusion 1: The agricultural fire classification method based on "space + time" dual criteria revealed significant limitations, with fundamental errors arising from 1km resolution cropland data and fixed harvest time windows, resulting in 10%-15% misclassification rates in transitional zones.
 - Conclusion 2: Key uncertainty sources included unupdated cropland data failing to reflect land-use changes (2010-2019), fixed harvest windows ignoring interannual climate variations, and MODIS detection limitations missing 20%-30% of nighttime burning events.
@@ -197,8 +197,8 @@ This structured approach ensures a systematic and reproducible methodology for i
 - Conclusion 4: Implementation of CLCD (30m annual land cover data) significantly improves classification accuracy through refined spatial matching (reducing errors to 2%-3%), dynamic harvest window adjustment, and better identification of off-field burning near agricultural areas.
 - Conclusion 5: The optimized approach using CLCD recovers 3%-5% previously misclassified agricultural fires and enhances classification accuracy from 70%-80% to 85%-90%, providing more reliable spatial distribution mapping and temporal trend analysis for straw burning management.
 
-### Challenge 3
-#### Method
+### Challenge 3: Meteorology & Pollution
+#### Solution
 - Step 1: Analyze the influence of meteorological conditions (wind speed, atmospheric stability, humidity, precipitation, and cloud cover) on fire detection accuracy and smoke dispersion patterns using satellite thermal data and weather records.
 - Step 2: Correlate temporal peaks in air pollutant concentrations (PM2.5/PM10) with straw burning periods through time-series comparsion of daily monitoring station data and satellite fire counts.
 
@@ -215,7 +215,7 @@ This structured approach ensures a systematic and reproducible methodology for i
 ![PM2.5污染与秸秆焚烧事件时间关联分析](image/challenge_3/Temporal_Correlation_Analysis_of_PM2.5_Pollution_and_Straw_Burning_Events.png)
 
 
-## Contact and citation
+## Contact and Citation
 - If you want to contact the auther, please send an email to `kzhu597@connect.hkust-gz.edu.cn`.  
 
 - If you find this project useful, please cite it as follows:
